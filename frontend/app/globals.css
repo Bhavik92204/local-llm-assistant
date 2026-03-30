@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --jarvis-glow: rgba(61, 158, 255, 0.15);
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-jarvis-bg text-jarvis-text antialiased;
+  background-image:
+    radial-gradient(ellipse 120% 80% at 50% -20%, var(--jarvis-glow), transparent),
+    linear-gradient(180deg, #0a0e14 0%, #080b10 100%);
+  min-height: 100vh;
+}
+
+/* Subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0e14;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e2836;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2a3548;
+}

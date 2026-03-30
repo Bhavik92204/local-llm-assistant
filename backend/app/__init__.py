@@ -1,0 +1,1 @@
+"""Jarvis Local — FastAPI backend."""
